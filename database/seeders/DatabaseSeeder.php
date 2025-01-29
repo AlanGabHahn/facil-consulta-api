@@ -23,8 +23,8 @@ class DatabaseSeeder extends Seeder
         Paciente::factory(10)->create();
         User::factory()->create([
             'name' => 'Test User',
-            'email' => 'test@example.com',
-            'password' => bcrypt('password')
+            'email' => 'admin@email.com',
+            'password' => bcrypt('123456')
         ]);
     }
 }
