@@ -25,15 +25,7 @@ git clone https://github.com/AlanGabHahn/facil-consulta-api.git
 cd facil-consulta-api
 ```
 
-## 🐋 Passo 2: Subir os containers com Laravel Sail
-
-```bash
-./vendor/bin/sail up -d
-```
-
-> Nota: Certifique-se de que o Docker está rodando antes de executar este comando.
-
-### 🔧 Passo 3: Configurar o arquivo `.env`
+### 🔧 Passo 2: Configurar o arquivo `.env`
 
 Copie o arquivo `.env.example` e configure as variáveis de ambiente:
 
@@ -51,6 +43,14 @@ DB_DATABASE=seu_banco
 DB_USERNAME=root
 DB_PASSWORD=root
 ```
+
+## 🐋 Passo 3: Subir os containers com Laravel Sail
+
+```bash
+./vendor/bin/sail up -d
+```
+
+> Nota: Certifique-se de que o Docker está rodando antes de executar este comando.
 
 ### 📦 Passo 4: Instalar as dependências
 
@@ -182,4 +182,3 @@ Authorization: Bearer seu_token_aqui
 Esta API fornece os recursos necessários para listar, cadastrar e gerenciar médicos, pacientes e consultas, utilizando autenticação JWT e um ambiente Dockerizado com Laravel Sail.
 
 Caso tenha dúvidas ou precise de suporte, entre em contato. 🚀
-
